@@ -20,8 +20,17 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (product) => {
-    const newProducts = products.filter((item) => item.id !== product.id);
-    setProducts(newProducts);
+    if (product.quantity==1){
+      const newProducts = products.filter((item) => item.id !== product.id);
+      setProducts(newProducts);
+    }else {
+      setProducts(
+        products.map((item) => {
+          return item.id === product.id ? { ...item, quantity: item.quantity -1 } : item;
+        })
+      );
+    }
+    
   };
 
   return (
