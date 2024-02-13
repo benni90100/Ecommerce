@@ -1,0 +1,37 @@
+.homepage{
+    background-image: url("https://media.istockphoto.com/id/627585972/it/foto/giovane-famiglia-che-fa-shopping-per-natale.jpg?s=1024x1024&w=is&k=20&c=O9ydBzrS1ZTcFF5kN-pmr2uYGhu7kNzoi6a382YfhE0=");
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .button-container{
+        display: flex;
+        width: 700px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.384);
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        button{
+            padding: 20px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            border: none;
+            margin-top: 20px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        h1{
+            color: white;
+        }
+    }
+}

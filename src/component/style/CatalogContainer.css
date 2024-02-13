@@ -1,8 +1,100 @@
-.catalog-container{
+
+.carrello-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: rgba(207, 213, 226, 0.575);
+    .banner{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px auto;
+        padding: 20px;
+        background-color: white;
+        .iscriviti{
+            border: none;
+            background-color: rgba(103, 210, 214, 0.603);
+            border-radius: 10px;
+            padding: 0 20px;
+        }
+    }
+    .totale{
+        width: 20%;
+        height: 200px;
+        padding: 10px;
+        background-color: white;
+    }
+}
+
+.carrello-cont{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin-left: 62px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .header{
+        padding-bottom: 10px;
+        
+    }
+    .des{
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        color: blue;
+    }
+    .card-carrello{
+   
+        background-color: rgb(255, 255, 255);
+        height: 200px;
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+        .radio{
+            display: flex;
+            justify-content: center; 
+            padding: 0 10px;
+        }
+        .image-carr{
+            height: 200px;
+            padding: 10px;
+        }
+        .central-carrello{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 10px;
+            
+            .title{
+                padding-top: 10px;
+                font-size: 20px;
+            }
+            .h5{
+                font-size: 12px;
+                color: green;
+            }
+            .footer-carrello{
+                padding: 20px 0;
+                gap: 10px;
+                display: flex;
+                justify-content: space-around;
+                .quantity-button{
+                    padding: 0 5px;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+    }
+    
+}
+.catalog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+
 }
