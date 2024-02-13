@@ -20,8 +20,8 @@ export  function NavFirst() {
             <Nav.Link ><Link to="/Home">Home</Link></Nav.Link>
             <Nav.Link ><Link to="/Catalogo">Catalogo</Link></Nav.Link>
            
-            <Nav.Link href="#" >
-              Carrello
+            <Nav.Link >
+            <Link to="/Carrello">carrello</Link>
             </Nav.Link>
             <Nav.Link href="#1" >
               Categorie
